@@ -5,10 +5,10 @@ In this example, I observe network traffic to and from Azure Virtual Machines (W
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/)
+- Microsoft Azure (Virtual Machines)
 - Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, DNS, ICMP)
+- Command-Line Tools
+- Network Protocols (SSH, DNS, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -16,12 +16,30 @@ In this example, I observe network traffic to and from Azure Virtual Machines (W
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
+<h3>Observing ICMP Traffic and changing NSG Inbound Traffic Rules</h3>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+
+-Create 2 virtual machines (VMs) in Azure on the same virtual network/subnet:
+
+![Virtual Machines](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/8f32618d-4851-4c97-8962-014e553fadba)
+
+
+-Remote Desktop connect to VM1, open WireShark and filter for ICMP traffic, open Powershell and perpetual ping VM2:
+ 
+![VM1 ping VM2](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/07425c36-74b9-4615-ab75-91994750167e)
+
+
+-Create an inbound traffic rule on VM2's Network Security Group to disable all incoming ICMP traffic:
+
+![NSG VM2 Before](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/360d7d68-b375-45f5-9a68-a2fbda03fca5)
+
+![Inbound Security Rule - Deny ICMP](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/273f1f13-74d3-4b9c-9fb7-4da47ea2c9c9)
+
+
+In VM1's remote session, observe the ICMP request/reply timeout after VM2's NSG settings have been altered:
+
+![ICMP timeout](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/e525ec61-5e81-479e-b28d-e2276e8b517d)
+
 
 <h2>Actions and Observations</h2>
 
