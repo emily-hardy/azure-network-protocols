@@ -21,8 +21,7 @@ In this example, I observe network traffic to and from Azure Virtual Machines wi
 <p><i>Observations: Upon changing the Network Security Group (NSG) inbound traffic rules to deny all ICMP traffic, the ping from VM1 to VM2 immediately timed out and Wireshark captured only request packets.</p></i>
 <br>
 -Create 2 virtual machines (VMs) in Azure on the same virtual network/subnet:
-![VMs](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/199f2671-d209-4b48-97dc-c74f0ab26727)
-
+![VMs](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/4ae25cb0-8209-4a78-b40d-b9f0ed4c7c33)
 
 
 <br>
