@@ -1,14 +1,15 @@
-<p align="center">
-<h1>Inspecting Traffic Between Azure Virtual Machines</h1>
-In this example, I observe network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<p align="center"> 
 
+<h1> Inspecting Traffic Between Virtual Machines</h1>
+In this example, I observe network traffic to and from Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<br>
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines)
-- Remote Desktop
-- Command-Line Tools
-- Network Protocols (ICMP, SSH, DNS)
+- Remote Desktop (Microsoft)
+- Powershell (Microsoft)
+- Network Protocols (ICMP, SSH, DHCP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -21,7 +22,7 @@ In this example, I observe network traffic to and from Azure Virtual Machines wi
 <p><i>Observations: Upon changing the Network Security Group (NSG) inbound traffic rules to deny all ICMP traffic, the ping from VM1 to VM2 immediately timed out and Wireshark captured only request packets.</p></i>
 <br>
 <p>-Create 2 virtual machines (VMs) in Azure on the same virtual network/subnet:</p>
-<a href="https://imgur.com/Kcfo6yk"><img src="https://i.imgur.com/Kcfo6yk.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Kcfo6yk"><img src="https://i.imgur.com/Kcfo6yk.png" title="source: imgur.com" /></a> 
 <br>
 <br>
 <br>
@@ -41,28 +42,13 @@ In this example, I observe network traffic to and from Azure Virtual Machines wi
 <p>In VM1's remote session, observe the ICMP request/reply timeout after VM2's NSG settings have been altered:</p>
 
 ![ICMP timeout](https://github.com/emily-hardy/azure-network-protocols/assets/150190489/e525ec61-5e81-479e-b28d-e2276e8b517d)
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<br>
+<br>
+<br>
+<h3>Connecting to VM2 from VM1 via SSH</h3>
+<a href="https://imgur.com/jQNd42f"><img src="https://i.imgur.com/jQNd42f.png" title="source: imgur.com" /></a>
+<br>
+<br>
+<br>
+<h3>Observing DHCP Traffic and Renewing VM1's IP Address  </h3>
+<a href="https://imgur.com/Pm67Uqx"><img src="https://i.imgur.com/Pm67Uqx.png" title="source: imgur.com" /></a>
