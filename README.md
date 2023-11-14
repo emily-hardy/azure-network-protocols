@@ -1,7 +1,7 @@
 <p align="center"> 
 
 <h1> Inspecting Traffic Between Virtual Machines</h1>
-In this example, I observe network traffic to and from Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+In this example, I observe network traffic to and from Virtual Machines with Wireshark. <br />
 <br>
 
 <h2>Environments and Technologies Used</h2>
