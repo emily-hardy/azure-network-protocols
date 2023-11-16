@@ -27,7 +27,7 @@ In this example, I observe network traffic to and from Virtual Machines with Wir
 <br>
 <br>
 <p>-Remote Desktop connect to VM1, open WireShark and filter for ICMP traffic, open Powershell and perpetual ping VM2:</p> 
-<a href="https://imgur.com/IzZrqZF"><img src="https://i.imgur.com/IzZrqZF.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/mCwoi9z"><img src="https://i.imgur.com/mCwoi9z.png" title="source: imgur.com" /></a>
 <br>
 <br>
 <br>
@@ -46,7 +46,7 @@ In this example, I observe network traffic to and from Virtual Machines with Wir
 <br>
 <br>
 <h3>2. Connecting to VM2 from VM1 via SSH</h3>
-<a href="https://imgur.com/jQNd42f"><img src="https://i.imgur.com/jQNd42f.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/N4Eu5ju"><img src="https://i.imgur.com/N4Eu5ju.png" title="source: imgur.com" /></a>
 <br>
 <br>
 <br>
