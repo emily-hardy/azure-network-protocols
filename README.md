@@ -45,10 +45,10 @@ In this example, I observe network traffic to and from Virtual Machines with Wir
 <br>
 <br>
 <br>
-<h3>Connecting to VM2 from VM1 via SSH</h3>
+<h3>2. Connecting to VM2 from VM1 via SSH</h3>
 <a href="https://imgur.com/jQNd42f"><img src="https://i.imgur.com/jQNd42f.png" title="source: imgur.com" /></a>
 <br>
 <br>
 <br>
-<h3>Observing DHCP Traffic and Renewing VM1's IP Address  </h3>
+<h3>3. Observing DHCP Traffic and Renewing VM1's IP Address  </h3>
 <a href="https://imgur.com/Pm67Uqx"><img src="https://i.imgur.com/Pm67Uqx.png" title="source: imgur.com" /></a>
